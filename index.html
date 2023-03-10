@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackson Malone Portfolio</title>
+</head>
+<body id="canvas">
+  <nav id="navbar" class="nav">
+    <ul class="nav-cont">
+      <li><a onclick="scrollFunction1()" id="nav-home" class="nav-item" href="#home">Home</a></li>
+      <li><a onclick="scrollFunction2()" id="nav-projects" class="nav-item" href="#projects">Projects</a></li>
+      <li><a onclick="scrollFunction3()" id="nav-contact" class="nav-item" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section id="home" class="home-section">
+    <h1>Hi, I'm Jackson Malone</h1>
+    <h2>Software Developer</h2>
+  </section>
+  
+  <section id="projects" class="projects-section">
+    <h2>These are some of my projects</h2>
+    <div class="projects-grid">
+      <a
+        href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+      <img
+        class="project-image"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+          Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+      <img
+        class="project-image"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+          Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+      <img
+        class="project-image"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+          Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+      <img
+        class="project-image"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+          Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+      </a>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Contact me</h2>
+      <p>here</p>
+    </div>
+    <div class="contact-links">
+      <ul class="links-cont">
+        <li>
+          <img src="images/github.png" alt="github" class="github-png">
+          <a class="github-text" href="https://github.com/jacksonmalone">GitHub</a>
+        </li>
+        <li>
+          <img src="images/at-sign.png" alt="at-sign" class="at-sign-png">
+          <a class="github-text" href="mailto:jrm0094@mix.wvu.edu">email me</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer"></footer>
+
+  <script src="app.js"></script>
+  <script src="confetti.js"></script>
+  <script>
+    const start = () => {
+      setTimeout(function() {
+        confetti.start()
+      }, 1000);
+    };
+
+    const stop = () => {
+      setTimeout(function() {
+        confetti.stop()
+      }, 3000);
+    };
+
+    start();
+    stop();
+  </script>
+</body>
+
+</html>
