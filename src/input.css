@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gap: 24px;
+  --nav-width: 1024px;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #382e3c; /* 382e3c is a nice purple to me */
+  color: white;
+  font-family: Verdana;
+}
+
+#nav {
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
+  line-height: 60px;
+}
+
+#my-name {
+  margin: auto var(--gap);
+}
+
+#my-list {
+  margin: auto var(--gap);
+}
+
+#main-page {
+  padding: var(--gap);
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  top: 148px;
+  display: inline-block;
+  background-color: #606060;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 2.3rem;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@media screen and (max-width: 480px) {
+  .name::after {
+    content: "";
+    visibility: hidden;
+  }
+}
